@@ -35,12 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // shrink button on click
-button.addEventListener("mousedown", () => {
-    setButtonHeight(0.8);
-});
-button.addEventListener("mouseup", () => {
-    setButtonHeight();
-});
+// button.addEventListener("mousedown", () => {
+//     setButtonHeight(0.8);
+// });
+// button.addEventListener("mouseup", () => {
+//     setButtonHeight();
+// });
 // INITIALIZE
 // =========================================================
 setButtonHeight();
