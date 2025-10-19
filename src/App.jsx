@@ -3,7 +3,7 @@ import background from './assets/bg-main.webp'
 import playButton from './assets/play-btn.webp'
 import './App.css'
 
-const RATIO = 600 / 1350 * 0.7;
+const RATIO = 600 / 1350 * 0.75;
 
 function App() {
   const buttonRef = React.useRef(null);
@@ -23,12 +23,12 @@ function App() {
   }, []);
 
   return (
-    <div className="relative h-screen font-sans">
+    <div className="relative h-screen font-sans aspect-9/16">
       <img id="background" src={background} ref={backgroundRef} alt="Herbalife Background"
-        className="absolute top-0 left-0 w-full h-full object-contain -z-10" />
+        className="absolute top-0 left-0 w-full h-[101%] object-cover -z-10" />
 
       <div className="relative h-full">
-        <button className="absolute top-[58%] left-1/2 -translate-x-1/2 -translate-y-1/2 appearance:none will-change-transform transition-transform duration-200 ease-in-out active:scale-50">
+        <button className="absolute top-[59%] left-[48%] -translate-x-1/2 -translate-y-1/2 appearance:none will-change-transform transition-transform duration-100 ease-in-out active:scale-50">
           <img ref={buttonRef} id="play-button" src={playButton} alt="Play Button"
             className="max-w-[600px] h-auto cursor-pointer" />
         </button>
