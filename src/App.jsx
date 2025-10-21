@@ -38,8 +38,8 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="hidden lg:flex items-center justify-center h-full flex-col gap-4">
-        <p className="text-2xl">This experience is only available on mobile devices.</p>
+      <div className="hidden lg:flex items-center justify-center h-full flex-col gap-4 bg-gray-800 text-white">
+        <p className="text-2xl">This site is only available on mobile devices.</p>
       </div>
     </div>
   )
